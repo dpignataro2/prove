@@ -119,7 +119,7 @@ public class Skeleton {
 
     String RESTServ = "http://aserv.inrialpes.fr/rest/";
 
-    public static void main( String[] args ) {
+    public static void testSkeleton( String[] args ) {
 	new Skeleton().run( args );
     }
 

@@ -11,7 +11,7 @@ public class DistFile {
      * @param args
      * @throws java.io.IOException
      */
-    public static void main(String[] args) throws IOException {
+    public static void testDistFile(String[] args) throws IOException {
 	File f1 = new File(args[0]);
 	
 	int[] dist = new int[200];

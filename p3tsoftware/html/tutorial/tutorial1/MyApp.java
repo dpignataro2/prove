@@ -58,7 +58,7 @@ import java.net.URI;
 
 public class MyApp {
 
-    public static void main( String[] args ) {
+    public static void testMyApp( String[] args ) {
 	URI onto1 = null;
 	URI onto2 = null;
 	Parameters params = new BasicParameters();

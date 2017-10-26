@@ -54,7 +54,7 @@ import java.util.Properties;
 
 public class Skeleton {
 
-    public static void main( String[] args ) {
+    public static void testSkeleton( String[] args ) {
 	URI onto1 = null;
 	URI onto2 = null;
 	Properties params = new BasicParameters();

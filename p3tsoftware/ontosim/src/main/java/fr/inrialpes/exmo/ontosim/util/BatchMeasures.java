@@ -89,7 +89,7 @@ public class BatchMeasures {
     /**
      * @param args
      */
-    public static void main(String[] args) throws Exception {
+    public static void testBatchMeasures(String[] args) throws Exception {
 
     Container cont = new Container();
 	cont.weakenT=false; // is weakening random or by threshold

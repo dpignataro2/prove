@@ -21,7 +21,7 @@ public class SimMatrix {
      * @throws java.io.FileNotFoundException
      */
     @SuppressWarnings("unchecked")
-    public static void main(String[] args) throws OntowrapException, FileNotFoundException {
+    public static void testSimMatrix(String[] args) throws OntowrapException, FileNotFoundException {
 	
 	File f1 = new File(args[0]);
 	File f2 = new File(args[1]);

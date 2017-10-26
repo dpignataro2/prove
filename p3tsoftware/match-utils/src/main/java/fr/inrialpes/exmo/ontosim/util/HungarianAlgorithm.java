@@ -586,7 +586,7 @@ public class HungarianAlgorithm {
 	//MAIN METHOD//
 	//***********//
 
-	public static void main(String[] args)
+	public static void testHungarianAlgorithm(String[] args)
 	{
 		//Below enter "max" or "min" to find maximum sum or minimum sum assignment.
 		String sumType = "max";

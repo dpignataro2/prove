@@ -86,7 +86,7 @@ public class AlignmentService {
     private AServProtocolManager manager;
     private DBService connection;
 
-    public static void main(String[] args) {
+    public static void testAlignmentService(String[] args) {
 	try { new AlignmentService().run( args ); }
 	catch ( Exception ex ) {
 	    logger.error( "FATAL error", ex );

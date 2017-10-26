@@ -991,7 +991,7 @@ public abstract class AD extends AbstractAlignmentSpaceMeasure<HeavyLoadedOntolo
 	return getMeasureValue(o1,o2);
     }
 
-    public static void main(String[] args) throws OntowrapException, AlignmentException {
+    public static void testAD(String[] args) throws OntowrapException, AlignmentException {
 	JENAOntologyFactory fact = new JENAOntologyFactory();
 	HeavyLoadedOntology<OntModel> onto1 =fact.loadOntology((new File("/Users/jerome/Recherche/jeux_de_tests/conferences/conference/confious.owl")).toURI());
 	HeavyLoadedOntology<OntModel> onto2 =fact.loadOntology((new File("/Users/jerome/Recherche/jeux_de_tests/conferences/conference/crs_dr.owl")).toURI());//

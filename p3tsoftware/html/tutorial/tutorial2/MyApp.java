@@ -62,7 +62,7 @@ import java.util.Properties;
 
 public class MyApp {
 
-    public static void main( String[] args ) {
+    public static void testMyApp( String[] args ) {
 	URI onto1 = null;
 	URI onto2 = null;
 	Properties params = new BasicParameters();

@@ -95,7 +95,7 @@ public class MyApp {
 
     String RESTServ = "http://aserv.inrialpes.fr/rest/";
 
-    public static void main( String[] args ) {
+    public static void testMyApp( String[] args ) {
 	try {
 	    new MyApp().run( args );
 	} catch ( Exception ex ) {

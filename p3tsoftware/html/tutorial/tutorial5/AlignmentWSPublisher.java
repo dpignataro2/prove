@@ -7,7 +7,7 @@ import eu.sealsproject.omt.ws.matcher.AlignmentWSImpl;
 
 public class AlignmentWSPublisher {
 	
-	   public static void main(String args[]) {
+	   public static void testAlignmentWSPublisher(String args[]) {
 	  
 		  
 		   /* Publish matcher service web service */
