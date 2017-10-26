@@ -57,7 +57,7 @@ java -cp .:../../lib/procalign.jar MyAlign
 
 public class MyAlign {
 
-    public static void main(String[] args) {
+    public static void testMyAlign(String[] args) {
 	try {
 	    URI uri1 = new URI("file:../rdf/edu.umbc.ebiquity.publication.owl");
 	    URI uri2 = new URI("file:../rdf/edu.mit.visus.bibtex.owl");

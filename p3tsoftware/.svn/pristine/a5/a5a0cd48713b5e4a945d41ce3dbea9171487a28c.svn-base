@@ -97,7 +97,7 @@ public class GroupEval {
 	String arg;
 	String listFile = "";
 
-    public static void testGroupEval(String[] args) {
+    public static void main(String[] args) {
 	try { new GroupEval().run( args ); }
 	catch (Exception ex) { ex.printStackTrace(); };
     }

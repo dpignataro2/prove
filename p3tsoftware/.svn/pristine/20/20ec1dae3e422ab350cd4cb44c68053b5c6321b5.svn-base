@@ -91,7 +91,7 @@ $Id: Procalign.java 1820 2013-03-06 10:13:00Z euzenat $
 
 public class Procalign {
 
-    public static void testProcalign(String[] args) {
+    public static void main(String[] args) {
 	try { new Procalign().run( args ); }
 	catch ( Exception ex ) { ex.printStackTrace(); };
     }

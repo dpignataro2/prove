@@ -151,7 +151,7 @@ public class GroupOutput {
     int measure = 0;
     PrintWriter output = null;
 
-    public static void main(String[] args) {
+    public static void testGroupOutput(String[] args) {
 	try { new GroupOutput().run( args ); }
 	catch (Exception ex) { ex.printStackTrace(); };
     }

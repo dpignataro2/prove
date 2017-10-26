@@ -71,7 +71,7 @@ $Id: ParserPrinter.java 1827 2013-03-07 22:44:05Z euzenat $
 
 public class ParserPrinter {
 
-    public static void main(String[] args) {
+    public static void testParserPrinter(String[] args) {
 	try { new ParserPrinter().run( args ); }
 	catch (Exception ex) { ex.printStackTrace(); };
     }

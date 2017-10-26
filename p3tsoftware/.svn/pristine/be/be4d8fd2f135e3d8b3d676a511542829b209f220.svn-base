@@ -99,7 +99,7 @@ public class WGroupEval {
     String color = null;
     String ontoDir = null;
 
-    public static void testWGroupEval(String[] args) {
+    public static void main(String[] args) {
 	try { new WGroupEval().run( args ); }
 	catch (Exception ex) { ex.printStackTrace(); };
     }

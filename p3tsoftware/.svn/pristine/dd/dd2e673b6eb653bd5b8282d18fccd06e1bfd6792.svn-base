@@ -72,7 +72,7 @@ public class AlignmentClient {
     private String RESTAction = null;
     private String renderer = "XML";
 
-    public static void testAlignmentClient(String[] args) {
+    public static void main(String[] args) {
 	try { new AlignmentClient().run( args ); }
 	catch ( Exception ex ) { ex.printStackTrace(); };
     }

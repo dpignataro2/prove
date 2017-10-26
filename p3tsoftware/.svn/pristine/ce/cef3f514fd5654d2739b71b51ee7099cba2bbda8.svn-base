@@ -58,7 +58,7 @@ public class TestGen {
 	fileName = "onto.rdf";
     }
 
-    public static void testGen(String[] args) {
+    public static void main(String[] args) {
         try { new TestGen().run( args ); }
         catch ( Exception ex ) { ex.printStackTrace(); };
     }

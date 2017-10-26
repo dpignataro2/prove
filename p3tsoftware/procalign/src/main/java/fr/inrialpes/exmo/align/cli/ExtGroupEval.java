@@ -104,7 +104,7 @@ public class ExtGroupEval {
     String color = null;
     String ontoDir = null;
 
-    public static void main(String[] args) {
+    public static void testExtGroupEval(String[] args) {
 	try { new ExtGroupEval().run( args ); }
 	catch (Exception ex) { ex.printStackTrace(); };
     }

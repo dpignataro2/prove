@@ -105,7 +105,7 @@ public class GenPlot {
     int size = 0; // the set of algo to compare
     PrintWriter output = null;
 
-    public static void main(String[] args) {
+    public static void testGenPlot(String[] args) {
 	try { new GenPlot().run( args ); }
 	catch (Exception ex) { ex.printStackTrace(); }
     }

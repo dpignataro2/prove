@@ -75,7 +75,7 @@ $Id: EvalAlign.java 1805 2013-02-08 14:25:15Z euzenat $
 
 public class EvalAlign {
 
-    public static void main(String[] args) {
+    public static void testEvalAlign(String[] args) {
 	new EvalAlign().run( args );
     }
 

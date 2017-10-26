@@ -89,7 +89,7 @@ public class GroupAlign {
     String rendererClass = "fr.inrialpes.exmo.align.impl.renderer.RDFRendererVisitor";
     String ontoDir = null;
 
-    public static void main(String[] args) {
+    public static void testGroupAlign(String[] args) {
 	try { new GroupAlign().run( args ); }
 	catch (Exception ex) { ex.printStackTrace(); };
     }
