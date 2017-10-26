@@ -120,11 +120,12 @@ public class WGroupEval {
 	longopts[9] = new LongOpt("directory", LongOpt.REQUIRED_ARGUMENT, null, 'w');
 
 	Getopt g = new Getopt("", args, "ho:a:d::l:f:t:r:w:c::", longopts);
-	int c = 0;
+	int c = g.getopt();
 	String arg= "";
 
-	while ((c = g.getopt()) != -1) {
+	while (c != -1) {
 		this.runSwitch(c, g, listFile,arg);
+		c = g.getopt();
 	}
 	listAlgo = new Vector<String>();
 	this.runForMethod(listFile);

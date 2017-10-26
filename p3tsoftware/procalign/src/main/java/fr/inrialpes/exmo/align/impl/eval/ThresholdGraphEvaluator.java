@@ -76,9 +76,11 @@ public class ThresholdGraphEvaluator extends GraphEvaluator {
 			} else { // but only when all correspondences with same strength have been processed
 				prevt = c.cell().getStrength();
 			}
-			while ( next >= 0.001 && c.cell().getStrength() <= next ) { // increment achieved
+			double strength = c.cell().getStrength();
+			while ( next >= 0.001 && strength <= next ) { // increment achieved
 				points.add( new Pair( next, fmeasure ) );
 				next -= increment;
+				strength = c.cell().getStrength();
 			}
 			nbfound++;
 			if ( c.correct() ) {

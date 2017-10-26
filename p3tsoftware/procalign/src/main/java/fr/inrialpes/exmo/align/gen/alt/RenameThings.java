@@ -508,11 +508,12 @@ public abstract class RenameThings extends BasicAlterator {
 		int index;
 
                 if ( str.contains( " " ) ) {
-                    while ( str.indexOf( " " ) != -1 ) {
-                        index = str.indexOf( " " );
+                    index = str.indexOf( " " );
+                    while ( index != -1 ) {
                         aux += str.substring( 0, index );
                         aux1 = str.substring(index+2);
                         str = str.substring(index+1, index+2).toUpperCase().concat( aux1 );
+                        index = str.indexOf( " " );
                     }
                     aux += str;
                     return aux;

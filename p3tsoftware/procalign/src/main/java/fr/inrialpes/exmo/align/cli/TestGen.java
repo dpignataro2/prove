@@ -77,15 +77,16 @@ public class TestGen {
 	longopts[7] = new LongOpt("D", LongOpt.REQUIRED_ARGUMENT, null, 'D');
           
 	Getopt g = new Getopt("", args, "d::o:u:m:n:a:D:t:h", longopts);
-	int c;
+	int c= g.getopt();
 	String arg;
 
-	while ((c = g.getopt()) != -1) {
+	while (c != -1) {
 		if(c=='h') {
 			usage();
 			return;
 		}
 		swhitchOpt(c, g);
+		c= g.getopt();
 	}
 
 	// We need an ontology

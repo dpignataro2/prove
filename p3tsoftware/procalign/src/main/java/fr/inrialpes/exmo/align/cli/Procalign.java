@@ -371,7 +371,11 @@ public class Procalign {
     	try {
 
 			fi = new FileInputStream(cont.paramfile);
-			while ((c = cont.g.getopt()) != -1) map.get(c).handle(cont);
+			c = cont.g.getopt();
+			while (c != -1){
+				map.get(c).handle(cont);
+				c = cont.g.getopt();
+			}
 
 			if (cont.debug > 0) {
 				cont.params.setProperty( "debug", Integer.toString(cont.debug) );

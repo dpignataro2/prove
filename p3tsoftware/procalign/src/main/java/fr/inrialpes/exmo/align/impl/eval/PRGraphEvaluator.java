@@ -180,10 +180,12 @@ public class PRGraphEvaluator extends GraphEvaluator {
 	double best = 0.; // best value found for that interval
 	while( j >= 0 ){
 	    Pair precrec = inflexion.get(j);
-	    while ( precrec.getX() < level ){
+	    double x = precrec.getX();
+		while ( x < level ){
 		precisions[i] = best; //??
 		i--;
 		level = (double)i/STEP;
+		x = precrec.getX();
 	    };
 	    if ( precrec.getY() > best ) best = precrec.getY();
 	    j--;

@@ -208,10 +208,12 @@ public class AveragePRGraphEvaluator extends GraphEvaluator {
 	private void evalAlignmentInnerC(int j, Vector<Pair> inflexion, double level, int i, double best){
 		while( j >= 0 ){
 			Pair precrec = inflexion.get(j);
-			while ( precrec.getX() < level ){
+			double x = precrec.getX();
+			while ( x < level ){
 				precisions[i] += best; //??
 				i--;
 				level = (double)i/STEP;
+				x = precrec.getX();
 			};
 			if ( precrec.getY() > best ) best = precrec.getY();
 			j--;
